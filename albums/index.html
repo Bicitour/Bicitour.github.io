@@ -12,7 +12,7 @@ header-img: "img/gallery-bg.jpg"
 			<figure class="gallery-item">
         <figure class="effect-selena">
   				<header class='gallery-icon'>
-  	       <a href="album1/"><img src="{{album.link-img}}"></a>
+  	       <a href="{{album.url}}"><img src="{{ album.folder-img | prepend:album.img-folder | prepend:site.baseurl }}"></a>
   				</header>
   				<figcaption class='gallery-caption'>
   					<div class="entry-summary">
