@@ -69,3 +69,7 @@ sitemap:
         - "/writing/"
     change_frequency_name: "change_frequency"
     priority_name: "priority"
+
+collections:
+  albums:
+    output: true
