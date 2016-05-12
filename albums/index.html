@@ -1,0 +1,29 @@
+---
+layout: gallery
+title: "Galleries"
+description: "archive"
+header-img: "img/gallery-bg.jpg"
+---
+<section id="content" role="main">
+	<div class="wrapper">
+		<!-- Gallery __-->
+		<div class="gallery masonry-gallery">
+      {% for album in site.albums %}
+			<figure class="gallery-item">
+        <figure class="effect-selena">
+  				<header class='gallery-icon'>
+  	       <a href="album1/"><img src="{{album.link-img}}"></a>
+  				</header>
+  				<figcaption class='gallery-caption'>
+  					<div class="entry-summary">
+  						<h3>{{album.title}}</h3>
+  						<p>{{album.fecha}}</p>
+  					</div>
+  				</figcaption>
+        </figure>
+  		</figure>
+      {% endfor %}
+    </div>
+	</div><!-- END .wrapper -->
+</section>
+<h6><p>Image Source: <a href="https://unsplash.com/photos/YOT6kS8YtEA/">Unsplash</a></p></h6>

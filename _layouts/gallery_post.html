@@ -1,0 +1,20 @@
+---
+layout: gallery
+---
+<div class="gallery masonry-gallery">
+  {% for image in page.images %}
+    <figure class="gallery-item">
+			<header class='gallery-icon'>
+				<a href="{{ image.url }}" class="popup">
+          <img src="{{ image.url }}" style="cursor: default;" />
+        </a>
+			</header>
+			<figcaption class='gallery-caption'>
+				<div class="entry-summary">
+					<h3>{{ image.title }}</h3>
+					<p>{{ image.caption }}</p>
+				</div>
+			</figcaption>
+		</figure>
+  {% endfor %}
+</div>

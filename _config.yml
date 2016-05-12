@@ -73,3 +73,11 @@ sitemap:
 collections:
   albums:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: albums
+    values:
+      layout: gallery_post
+      gallery_popup: true
